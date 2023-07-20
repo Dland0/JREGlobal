@@ -42,10 +42,10 @@ function validateColumns(equipmentList, fieldMap, errors) {
 
 function validateData(equipmentList, fieldMap, errors) {
 
+    let counter = 2
+
     for (let equipment of equipmentList) {
-
-        let counter = 2
-
+        
         for (const item of fieldMap[Symbol.iterator]()) {
 
             let column = item[0];

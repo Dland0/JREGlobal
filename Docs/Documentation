@@ -1,2 +1,7 @@
 Task 1: Extend functionality of the validateColumns() function in validators.js to register a new error if an unknown field is present in the equipment list.
+    
     Answer: Add an else statement to the if statement after checking the result of field as if the header doesn't exist in the validationMap, it should show the error.
+
+Task 2: Why are all the errors on line 2? Find the bug and fix.
+
+    Answer: When validateData is called, inside the for loop, it was defining the counter = 2 and the error messages were setting the line = counter. this should be outside of the for loop as we are wanting to start from line 2 in the csv and then increase the counter after parsing each row.
