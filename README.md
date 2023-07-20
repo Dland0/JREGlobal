@@ -1,6 +1,8 @@
 # coding-task-2023
 Coding task for RJE Global's software engineering recruitment 2023
 
+Below is the original readme provided. I have added my thoughts/thinking in the Docs/documentation.txt file
+
 To run, open the project up in stackblitz, allow it to install dependencies, then type 'node app.js' in the terminal.
 
 The project converts the equipment_list.csv file to a json array, validates the contents against a predefined set of validation maps and returns an array of error message json objects to the client.
