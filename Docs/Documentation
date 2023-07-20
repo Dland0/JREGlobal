@@ -10,3 +10,7 @@ Task 3: Update the validation strings on the "Subsystem" and "PLU" fields so tha
 
     Answer: Create a new variable "notEmptyAndNoAmpersand" with a regex pattern to check for & and also null. Set the validation string for Subsystem and PLU = notEmptyAndNoAmpersand.
     Note: Reason for having the not empty check as well as the & is due to both Subsystem and PLU fields have isRequired = true
+
+Task 4: Add some HTML and CSS to the response object so that the errors list is more human readable.
+    Answer: Created errors.html as a template html page. Added a toHtml method in the LineError.js which is ran against each error that is found and the html added to a errorHTML string. Once completed, goes through the errors.html and replaces the errorHTML tag with the error cards.
+    Note: For some reason ran into error with using a seperate style.css so have converted back to css within the style tags on the errors.html, will review if have time over weekend.
