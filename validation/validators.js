@@ -18,9 +18,14 @@ function validateColumns(equipmentList, fieldMap, errors) {
     let headers = Object.keys(equipmentList[0])
 
     for (col = 0; col < headers.length; col++) {
+        let header = headers[col]; //define header to user in error message.
         let field = fieldMap.get(headers[col]);
         if (field) {
             field.colIndex = col;
+        }
+        else {
+            // Header doesn't exist in fieldMap
+            errors.push(new lineError("Unknown Field Found", header, 'N/A'));
         }
     }
 

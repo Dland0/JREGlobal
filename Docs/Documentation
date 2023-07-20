@@ -1,0 +1,2 @@
+Task 1: Extend functionality of the validateColumns() function in validators.js to register a new error if an unknown field is present in the equipment list.
+    Answer: Add an else statement to the if statement after checking the result of field as if the header doesn't exist in the validationMap, it should show the error.
