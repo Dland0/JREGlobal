@@ -108,8 +108,9 @@ function validateUniqueKeys(equipmentList, fieldMap, errors) {
 
         key = key.toLocaleLowerCase().replace(/\s/g, '');
         keyStrings.push({ key, counter });
+        counter++
+
     }
-    counter++
 
     // Filter just duplicates
     const duplicates = keyStrings.filter((key, index, self) =>
